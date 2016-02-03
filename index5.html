@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title Page</title>
+
+		<!-- Bootstrap CSS -->
+		<link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body>
+
+		<!-- Load
+		=================================================-->
+		<h3 style="background-color: #5198DA">Load</h3>
+
+		<a href="archivos_php/mensaje.php?color=verde" class="btn btn-success">Verde</a>
+		<a href="archivos_php/mensaje.php?color=azul" class="btn btn-primary">Azul</a>
+		<a href="archivos_php/mensaje.php?color=rojo" class="btn btn-danger">Rojo</a>
+		<div id="msj"></div>
+		
+		<!-- GET - POST
+		=================================================-->
+		<h3 style="background-color: #5198DA">GET - POST</h3>
+		
+		<h4>GET</h4>
+		<form action="archivos_php/calcular.php" method="GET">
+			<input id="n1" name="numero1" type="text" placeholder="Ingresar numero">
+			<input id="n2" name="numero2" type="text" placeholder="Ingresar numero">
+			<button id="enviar1" class="btn btn-primary">Multiplicar</button>
+		</form>
+
+		<div id="resultado_get"></div>
+
+		<h4>POST</h4>
+		<form action="archivos_php/calcular.php" method="POST">
+			<input id="n3" name="numero3" type="text" placeholder="Ingresar numero">
+			<button id="enviar2" class="btn btn-primary">Multiplicar</button>
+		</form>
+
+		<div id="resultado_post"></div>
+	
+		<!-- Metodo AJAX completo
+		=================================================-->
+		<h3 style="background-color: #5198DA">Metodo AJAX completo</h3>
+
+		<input id="anio" type="text" placeholder="Ingrese el año">
+		<button id="enviar_anio" class="btn btn-primary">Mostrar Año</button>
+		
+		<div id="mostrar_anio"></div>
+
+
+
+
+		<!-- jQuery -->
+		<script src="lib/jquery.js"></script>
+		<script src="js/main5.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	</body>
+</html>
+
+<style>
+
+</style>
